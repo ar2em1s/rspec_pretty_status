@@ -1,4 +1,4 @@
-# Rspec::Pretty::Status
+# RspecPrettyStatus
 
 Pretty controller specs with rails statuses in pure rspec.
 
@@ -16,14 +16,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install rspec-pretty-status
+    $ gem install rspec_pretty_status
 
 
 Then include in RSpec:
 
 ```ruby
 RSpec.configure do |config|
-  config.include RSpec::Pretty::Status
+  config.include RSpecPrettyStatus
 end
 ```
 ## Usage
@@ -36,7 +36,7 @@ it { expect(response).to have_http_status(:ok) }
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/Ar2emis/rspec-pretty-status.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Ar2emis/rspec_pretty_status.
 
 
 ## License
