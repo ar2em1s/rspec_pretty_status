@@ -22,6 +22,8 @@ Or install it yourself as:
 Then include in RSpec:
 
 ```ruby
+require 'rspec_pretty_status'
+
 RSpec.configure do |config|
   config.include RSpecPrettyStatus
 end
