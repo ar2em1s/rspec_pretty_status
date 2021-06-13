@@ -7,7 +7,7 @@ Pretty controller specs with rails statuses in pure rspec.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rspec-pretty-status'
+gem 'rspec_pretty_status'
 ```
 
 And then execute:

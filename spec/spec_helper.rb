@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
-require 'rspec/pretty/status'
+require 'rspec_pretty_status'
 require 'ostruct'
 
 RSpec.configure do |config|

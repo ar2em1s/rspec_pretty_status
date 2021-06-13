@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-require_relative 'lib/rspec/pretty/status/version'
+require_relative 'lib/rspec_pretty_status/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'rspec-pretty-status'
-  spec.version       = Rspec::Pretty::Status::VERSION
+  spec.name          = 'rspec_pretty_status'
+  spec.version       = RSpecPrettyStatus::VERSION
   spec.authors       = ['Artem Shevchenko']
   spec.email         = ['artemsheva0510@gmail.com']
 
   spec.summary       = 'Pretty response status as in rspec-rails'
-  spec.homepage      = 'https://github.com/Ar2emis/rspec-pretty-status'
+  spec.homepage      = 'https://github.com/Ar2emis/rspec_pretty_status'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.7.2')
 

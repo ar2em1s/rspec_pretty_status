@@ -1,23 +1,23 @@
 # frozen_string_literal: true
 
-RSpec.describe Rspec::Pretty::Status do
+RSpec.describe RspecPrettyStatus do
   it 'has a version number' do
-    expect(Rspec::Pretty::Status::VERSION).not_to be nil
+    expect(described_class::VERSION).not_to be nil
   end
 
   describe 'have_http_status matcher' do
     include described_class
 
-    Rspec::Pretty::Status::STATUSES.each do |status, _|
+    described_class::STATUSES.each do |status, _|
       context "when matches #{status} status" do
-        let(:response) { OpenStruct.new(status: Rspec::Pretty::Status::STATUSES[status]) }
+        let(:response) { OpenStruct.new(status: described_class::STATUSES[status]) }
 
         it { expect(have_http_status(status).matches?(response)).to eq true }
       end
 
       context "when not matches #{status} status" do
         let(:response) do
-          statuses = Rspec::Pretty::Status::STATUSES.keys - [status]
+          statuses = described_class::STATUSES.keys - [status]
           OpenStruct.new(status: statuses.sample)
         end
 
