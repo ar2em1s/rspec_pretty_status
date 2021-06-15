@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rspec_pretty_status (0.1.1)
+    rspec_pretty_status (0.1.2)
       rspec
 
 GEM
