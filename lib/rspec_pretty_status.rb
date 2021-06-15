@@ -62,7 +62,7 @@ module RSpecPrettyStatus
   INVERTED_STATUSES = STATUSES.invert
 
   def error_message(actual_status, expected_status)
-    "expected that status will be #{actual_status} but have #{expected_status}"
+    "expected that status will be #{expected_status} but have #{actual_status}"
   end
 
   def error_message_when_negated(actual_status)
