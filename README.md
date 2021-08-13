@@ -1,4 +1,5 @@
 # RspecPrettyStatus
+[![Gem Version](https://badge.fury.io/rb/rspec_pretty_status.svg)](https://badge.fury.io/rb/rspec_pretty_status)
 
 Pretty controller specs with rails statuses in pure rspec.
 
